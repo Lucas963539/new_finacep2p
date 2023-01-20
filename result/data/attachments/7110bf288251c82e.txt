@@ -1,0 +1,3 @@
+[32mINFO    [0m script.test_register_login:test_register_login.py:29 正在创建session对象
+[32mINFO    [0m script.test_register_login:test_register_login.py:32 正在创建ApiRegisterLogin实例
+[32mINFO    [0m script.test_register_login:test_register_login.py:38 正在关闭session对象：<requests.sessions.Session object at 0x11262dac0>

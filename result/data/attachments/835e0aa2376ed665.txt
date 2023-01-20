@@ -1,0 +1,8 @@
+[32mINFO    [0m script.test_register_login:test_register_login.py:29 正在创建session对象
+[32mINFO    [0m script.test_register_login:test_register_login.py:32 正在创建ApiRegisterLogin实例
+[32mINFO    [0m root:api_register_login.py:30 正在调用获取图片验证码接口，请求方法："get",请求url是http://user-p2p-test.itheima.net/common/public/verifycode1/12
+[32mINFO    [0m root:api_register_login.py:40 正在获取短信验证码接口，请求方法："post",请求url：http://user-p2p-test.itheima.net/member/public/sendSms，请求参数：{'phone': '18911113333', 'imgVerifyCode': '7777', 'type': 'reg'}
+[32mINFO    [0m root:api_register_login.py:54 正在调取注册接口，请求方法："post", 请求url：http://user-p2p-test.itheima.net/member/public/reg,请求参数：{'phone': '18911113333', 'password': 'test123', 'verifycode': '7777', 'phone_code': '666666', 'dy_server': 'on', 'invite_phone': ''}
+[32mINFO    [0m script.test_register_login:test_register_login.py:95 执行结果为：{"status":100,"description":"验证码错误!"}
+[32mINFO    [0m script.test_register_login:test_register_login.py:98 执行断言通过
+[32mINFO    [0m script.test_register_login:test_register_login.py:38 正在关闭session对象：<requests.sessions.Session object at 0x1115d19a0>

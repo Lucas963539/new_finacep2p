@@ -1,0 +1,13 @@
+[32mINFO    [0m script.test_register_login:test_register_login.py:29 正在创建session对象
+[32mINFO    [0m script.test_register_login:test_register_login.py:32 正在创建ApiRegisterLogin实例
+[32mINFO    [0m root:api_register_login.py:63 正在调取登录接口，请求方法："post",请求url：http://user-p2p-test.itheima.net/member/public/login,请求参数：{'keywords': '15815800001', 'password': 'error123'}
+[32mINFO    [0m script.test_register_login:test_register_login.py:116 执行结果为：{"status":100,"data":{"login_error":2},"description":"密码错误1次,达到3次将锁定账户"}
+[32mINFO    [0m root:api_register_login.py:63 正在调取登录接口，请求方法："post",请求url：http://user-p2p-test.itheima.net/member/public/login,请求参数：{'keywords': '15815800001', 'password': 'error123'}
+[32mINFO    [0m script.test_register_login:test_register_login.py:116 执行结果为：{"status":100,"data":{"login_error":3},"description":"密码错误2次,达到3次将锁定账户"}
+[32mINFO    [0m root:api_register_login.py:63 正在调取登录接口，请求方法："post",请求url：http://user-p2p-test.itheima.net/member/public/login,请求参数：{'keywords': '15815800001', 'password': 'error123'}
+[32mINFO    [0m script.test_register_login:test_register_login.py:116 执行结果为：{"status":100,"description":"由于连续输入错误密码达到上限，账号已被锁定，请于1.0分钟后重新登录"}
+[32mINFO    [0m script.test_register_login:test_register_login.py:121 执行断言通过
+[32mINFO    [0m root:api_register_login.py:63 正在调取登录接口，请求方法："post",请求url：http://user-p2p-test.itheima.net/member/public/login,请求参数：{'keywords': '15815800001', 'password': 'test123'}
+[32mINFO    [0m script.test_register_login:test_register_login.py:126 执行结果为：{"status":200,"description":"登录成功"}
+[32mINFO    [0m script.test_register_login:test_register_login.py:130 执行断言通过
+[32mINFO    [0m script.test_register_login:test_register_login.py:38 正在关闭session对象：<requests.sessions.Session object at 0x1115d1be0>

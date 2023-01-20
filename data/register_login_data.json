@@ -1,0 +1,107 @@
+{
+  "img_code": [
+    {
+      "desc": "获取图片验证码成功（随机小数）",
+      "random": 0.123,
+      "expect_code": 200
+    },
+    {
+      "desc": "获取图片验证码成功（随机整数）",
+      "random": 123,
+      "expect_code": 200
+    },{
+      "desc": "获取图片验证码失败（随机数为空）",
+      "random": "",
+      "expect_code": 404
+    },{
+      "desc": "获取图片验证码失败（随机数为字符串）",
+      "random": "aaa123",
+      "expect_code": 400
+    }],
+  "phone_code": [
+    {
+      "desc": "获取短信验证码成功",
+      "phone": "18911110000",
+      "imgVerifyCode": "8888",
+      "expect_txt": "发送成功"
+    },
+    {
+      "desc": "获取短信验证码失败（图片验证码错误）",
+      "phone": "18911110000",
+      "imgVerifyCode": "8899322",
+      "expect_txt": "验证码错误"
+    }
+  ],
+  "register": [
+    {
+      "desc": "注册成功（必填参数）",
+      "phone": "18911112222",
+      "password": "test123",
+      "verifycode": "8888",
+      "phone_code": "666666",
+      "expect_txt": "注册成功"
+    },
+    {
+      "desc": "注册失败（图片验证码错误）",
+      "phone": "18911113333",
+      "password": "test123",
+      "verifycode": "7777",
+      "phone_code": "666666",
+      "expect_txt": "验证码错误"
+    },
+    {
+      "desc": "注册失败（短信验证码错误）",
+      "phone": "18911113333",
+      "password": "test123",
+      "verifycode": "8888",
+      "phone_code": "777777",
+      "expect_txt": "验证码错误"
+    },
+    {
+      "desc": "注册失败（手机号已存在）",
+      "phone": "15815800001",
+      "password": "test123",
+      "verifycode": "8888",
+      "phone_code": "666666",
+      "expect_txt": "已存在"
+    }
+  ],
+  "login": [
+    {
+      "desc": "登录成功",
+      "keywords": "15815800001",
+      "password": "test123",
+      "expect_txt": "登录成功"
+    },
+    {
+      "desc": "登录失败（密码为空）",
+      "keywords": "15815800001",
+      "password": "",
+      "expect_txt": "不能为空"
+    },
+    {
+      "desc": "登录失败（用户不存在）",
+      "keywords": "18901010101",
+      "password": "11111111",
+      "expect_txt": "用户不存在"
+    },
+    {
+      "desc": "登录失败（解锁）",
+      "keywords": "15815800001",
+      "password": "error123",
+      "expect_txt": "成功"
+    }
+  ],
+  "login_status": [
+    {
+      "desc": "查询登录状态（已登录）",
+      "status": "已登录",
+      "expect_txt": "OK"
+    },
+    {
+      "desc": "查询登录状态（未登录）",
+      "status": "未登录",
+      "expect_txt": "未登"
+    }
+  ]
+}

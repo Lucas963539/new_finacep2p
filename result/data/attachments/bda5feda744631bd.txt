@@ -1,0 +1,6 @@
+[32mINFO    [0m script.test_register_login:test_register_login.py:29 正在创建session对象
+[32mINFO    [0m script.test_register_login:test_register_login.py:32 正在创建ApiRegisterLogin实例
+[32mINFO    [0m root:api_register_login.py:30 正在调用获取图片验证码接口，请求方法："get",请求url是http://user-p2p-test.itheima.net/common/public/verifycode1/
+[32mINFO    [0m script.test_register_login:test_register_login.py:48 正在执行图片验证码接口，响应状态码为：404
+[32mINFO    [0m script.test_register_login:test_register_login.py:51 执行图片验证码接口，断言通过
+[32mINFO    [0m script.test_register_login:test_register_login.py:38 正在关闭session对象：<requests.sessions.Session object at 0x1115c3e80>

@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_tender.py:19 session对象已创建，sessio: <requests.sessions.Session object at 0x11262da30>
+[32mINFO    [0m root:test_tender.py:23 ApiTender对象已创建

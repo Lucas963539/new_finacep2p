@@ -1,0 +1,4 @@
+[32mINFO    [0m root:api_register_login.py:63 正在调取登录接口，请求方法："post",请求url：http://user-p2p-test.itheima.net/member/public/login,请求参数：{'keywords': '15815800001', 'password': 'test123'}
+[32mINFO    [0m root:api_approve_trust.py:44 正在调取认证接口，请求方法："post", 请求url：http://user-p2p-test.itheima.net/member/realname/approverealname,请求参数：{'realname': '华仔', 'card_id': '350102199003072237'}
+[32mINFO    [0m root:test_approve_trust.py:35 正在执行认证接口，执行结果为{"status":200,"data":{"card_id":"350****237","realname":"华**"},"description":"提交成功!"}
+[32mINFO    [0m root:test_approve_trust.py:39 执行断言通过

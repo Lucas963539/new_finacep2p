@@ -1,0 +1,4 @@
+[32mINFO    [0m root:api_register_login.py:63 正在调取登录接口，请求方法："post",请求url：http://user-p2p-test.itheima.net/member/public/login,请求参数：{'keywords': '15815800001', 'password': 'test123'}
+[32mINFO    [0m root:api_approve_trust.py:60 正在调取获取图片验证码接口，请求方法："get", 请求url：http://user-p2p-test.itheima.net/common/public/verifycode/0.123
+[32mINFO    [0m root:test_approve_trust.py:88 正在执行查询认证状态接口，执行结果为200
+[32mINFO    [0m root:test_approve_trust.py:91 执行断言通过

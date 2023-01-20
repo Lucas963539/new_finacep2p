@@ -1,0 +1,6 @@
+[32mINFO    [0m script.test_register_login:test_register_login.py:29 正在创建session对象
+[32mINFO    [0m script.test_register_login:test_register_login.py:32 正在创建ApiRegisterLogin实例
+[32mINFO    [0m root:api_register_login.py:63 正在调取登录接口，请求方法："post",请求url：http://user-p2p-test.itheima.net/member/public/login,请求参数：{'keywords': '15815800001', 'password': ''}
+[32mINFO    [0m script.test_register_login:test_register_login.py:134 执行结果为：{"status":100,"description":"密码不能为空"}
+[32mINFO    [0m script.test_register_login:test_register_login.py:137 执行断言通过
+[32mINFO    [0m script.test_register_login:test_register_login.py:38 正在关闭session对象：<requests.sessions.Session object at 0x11263f310>

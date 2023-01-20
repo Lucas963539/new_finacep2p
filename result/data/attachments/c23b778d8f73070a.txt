@@ -1,0 +1,4 @@
+[32mINFO    [0m root:api_register_login.py:63 正在调取登录接口，请求方法："post",请求url：http://user-p2p-test.itheima.net/member/public/login,请求参数：{'keywords': '15815800001', 'password': 'test123'}
+[32mINFO    [0m root:api_approve_trust.py:50 正在调取认证状态接口，请求方法："post", 请求url：http://user-p2p-test.itheima.net/member/member/getapprove
+[32mINFO    [0m root:test_approve_trust.py:49 正在执行查询认证状态接口，执行结果为{"is_email_open":"-1","lastlogin_time":"1674186400","group_status":"","is_auth_user":"-1","is_realname_open":"2","is_corp":"-1","business_license":"","realname_remark":"Trust register notify","card_id":"350****237","realname":"华**","isCert":"2","realname_card":"1","pay_pwd":"","phone":"158****0001","realname_status":"1","trustType":"chinapnr","pwd":"1","email":"","is_trust":"1"}
+[32mINFO    [0m root:test_approve_trust.py:52 执行断言通过

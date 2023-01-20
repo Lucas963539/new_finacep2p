@@ -1,0 +1,33 @@
+img_code:
+  - desc: 获取图片验证码成功（随机小数）
+    random: 0.123
+    expect_code: 200
+  - desc: 获取图片验证码成功（随机小数）
+    random: 123
+    expect_code: 200
+  - desc: 获取图片验证码失败（随机数为空）
+    random: ""
+    expect_code: 404
+  - desc: 获取图片验证码失败（随机数为字符串）
+    random: aaa123
+    expect_code: 400
+
+phone_code:
+  - desc: 获取短信验证码成功
+    phone: 18911110000
+    imgVerifyCode: 8888
+    expect_txt: 发送成功
+  - desc: 获取短信验证码失败（图片验证码错误）
+    phone: 18911110000
+    imgVerifyCode: 9999
+    expect_txt: 验证码错误
+
+register:
+  - desc: 注册成功（必填参数
+    phone: 18911113333
+    password: test123
+    verifycode: 8888
+    phone_code: 666666
+    expect_txt: 注册成功
+
+

@@ -1,0 +1,14 @@
+{
+  "tender": [
+    {
+      "desc": "请求后台投资响应成功",
+      "amount": 100,
+      "expect_text": "OK"
+    },
+    {
+      "desc": "请求后台投资响应失败（金额为空）",
+      "amount": "",
+      "expect_text": "不是正确的金额"
+    }
+  ]
+}
